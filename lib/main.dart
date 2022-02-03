@@ -1,6 +1,8 @@
+import 'package:app/page_route.dart';
 import 'package:flutter/material.dart';
-import 'package:app/LoginPage.dart';
+import 'package:app/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:app/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +15,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         primarySwatch: Colors.purple,
@@ -24,32 +25,11 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.lato().fontFamily,
         // primaryTextTheme: GoogleFonts.latoTextTheme(),
       ),
+      initialRoute: MyRoute.loginRoute,
       routes: <String, WidgetBuilder>{
-        "/login": (context) => const LoginPage(),
+        MyRoute.homeRoute: (context) => const HomePage(),
+        MyRoute.loginRoute: (context) => const LoginPage(),
       },
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Catalog App"),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: ElevatedButton.icon(
-            onPressed: () {
-              Navigator.pushNamed(context, "/login");
-            },
-            icon: const Icon(Icons.code),
-            label: const Text("move")),
-      ),
-      drawer: const Drawer(),
     );
   }
 }
