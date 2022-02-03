@@ -1,6 +1,10 @@
 # Login page UI
-##Screenshot
-<img srd="https://github.com/Sushil787/Login-Page-UI/blob/main/Screenshot_1643900551.png">
+
+## Screenshot
+
+<img src="Screenshot_1643900551.png" height=600 width=300>
+
+
 
 A new Flutter project.
 
