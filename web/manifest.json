@@ -1,6 +1,6 @@
 {
-    "name": "app",
-    "short_name": "app",
+    "name": "shortcut",
+    "short_name": "shortcut",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

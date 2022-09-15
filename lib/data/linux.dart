@@ -1,0 +1,21 @@
+const List<Map> linux = [
+   {"key": "Ctrl + C ", "value": "Copy any highlighted text, image, or some other object to the clipboard."},
+    {"key": "Ctrl + V ", "value": "Paste copied text, image, or some other object from the clipboard."},
+     {"key": "Ctrl + X ", "value": "Cut highlighted text, image, or some other object."},
+      {"key": "Ctrl + S ", "value": "Save the currently opened file."},
+       {"key": " Ctrl + N", "value": "Create a new file."},
+        {"key": "Ctrl + Z ", "value": "Undo the last action."},
+         {"key": " Ctrl + Q", "value": "Quit the application in focus."},
+          {"key": "Ctrl + Alt + F1 to F6 ", "value": "Switch to a virtual console"},
+           {"key": " Ctrl + Alt + F7", "value": "Switch to the first graphical terminal."},
+            {"key": " Alt + Tab", "value": "Cycle between running applications."},
+             {"key": " Alt + Shift + Tab", "value": "Cycle between running applications in the opposite direction."},
+              {"key": " Alt + ` (grave accent)", "value": "Cycle between windows of the same application in Alt + Tab."},
+               {"key": " Alt + F1", "value": "Open the Applications menu."},
+                {"key": "Alt + F2 ", "value": "Open a floating command prompt."},
+                 {"key": " PrtSc", "value": "Take a screenshot of the entire screen"},
+                  {"key": "Alt + PrtSc ", "value": "Take a screenshot of the window in focus."},
+                   {"key": " Ctrl + Alt + Arrow keys", "value": "Switch between workspaces."},
+                    {"key": " Ctrl + Alt + D", "value": "Minimize all windows to show desktop."},
+                    
+];
